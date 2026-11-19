@@ -1,0 +1,128 @@
+/* Scoped to body.maddo-page-contact-us-feedback .site-main so it cannot affect other pages. */
+body.maddo-page-contact-us-feedback .site-main nav bar {
+    display: flex;
+    border-top: 6px solid rga(34, 110, 241, 0.5);
+    margin-top: 60px;
+        }
+body.maddo-page-contact-us-feedback .site-main .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 60px;
+            align-items: flex-start;
+        }
+body.maddo-page-contact-us-feedback .site-main .left-column {
+            flex: 1;
+            min-width: 300px;
+        }
+body.maddo-page-contact-us-feedback .site-main .left-column h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            line-height: 1.2;
+        }
+body.maddo-page-contact-us-feedback .site-main .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+body.maddo-page-contact-us-feedback .site-main .icon-circle {
+            background-color: #76b5fd;
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            flex-shrink: 0;
+            font-size: 1.2rem;
+        }
+body.maddo-page-contact-us-feedback .site-main .contact-details h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+body.maddo-page-contact-us-feedback .site-main .contact-details p {
+            font-size: 1rem;
+            color: #333333;
+        }
+body.maddo-page-contact-us-feedback .site-main .distributors-section {
+            margin-top: 40px;
+        }
+body.maddo-page-contact-us-feedback .site-main .distributors-section h3 {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #1a2b4c;
+            margin-bottom: 15px;
+        }
+body.maddo-page-contact-us-feedback .site-main .distributors-section ol {
+            padding-left: 20px;
+        }
+body.maddo-page-contact-us-feedback .site-main .distributors-section li {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #000000;
+        }
+body.maddo-page-contact-us-feedback .site-main .right-column {
+            flex: 1;
+            min-width: 300px;
+        }
+body.maddo-page-contact-us-feedback .site-main .right-column h2 {
+            font-size: 2.2rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+body.maddo-page-contact-us-feedback .site-main .form-card {
+            background-color: #76b5fd;
+            padding: 40px 30px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+body.maddo-page-contact-us-feedback .site-main .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+body.maddo-page-contact-us-feedback .site-main .form-group label {
+            color: #ffffff;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+body.maddo-page-contact-us-feedback .site-main .form-group input,
+body.maddo-page-contact-us-feedback .site-main .form-group textarea {
+            background-color:  #338aed;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            color: #ffffff;
+            font-size: 1rem;
+            outline: none;
+            width: 100%;
+        }
+body.maddo-page-contact-us-feedback .site-main .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+body.maddo-page-contact-us-feedback .site-main .submit-btn {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+body.maddo-page-contact-us-feedback .site-main .submit-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+    

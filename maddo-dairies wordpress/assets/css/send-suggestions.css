@@ -1,0 +1,100 @@
+/* Scoped to body.maddo-page-send-suggestions .site-main so it cannot affect other pages. */
+body.maddo-page-send-suggestions {
+        background-color: #eef2f5;
+       margin: 0;
+       padding: 0;
+      }
+body.maddo-page-send-suggestions .site-main .form-card {
+        background-color:   rgba(34, 110, 241, 0.803);
+        width: 100%;
+        margin: 30px auto;
+        max-width: 1400px;
+        padding: 30px;
+        border-radius: 12px;
+     }
+body.maddo-page-send-suggestions .site-main .form-card h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        color: #1a4fa0;
+        letter-spacing: 1px;
+     }
+body.maddo-page-send-suggestions .site-main .form-group {
+      margin-bottom: 15px;
+     }
+body.maddo-page-send-suggestions .site-main .form-header h2 {
+        color: black;
+        font-size: 28px;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+     }
+body.maddo-page-send-suggestions .site-main .form-header p {
+        color: white;
+        font-size: 14px;
+     }
+body.maddo-page-send-suggestions .site-main .Suggestion-form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+body.maddo-page-send-suggestions .site-main .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 8px;
+        width: 100%;
+      }
+body.maddo-page-send-suggestions .site-main label {
+        font-weight: 600;
+        font-size: 16px;
+        color:  white;
+        margin-bottom: 8px;
+        text-align: center;
+      }
+body.maddo-page-send-suggestions .site-main input[type="text"],
+body.maddo-page-send-suggestions .site-main textarea {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 14px;
+        border: 1.5px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 14px;
+        color: white;
+        background-color:  rgba(34, 110, 241, 0.803);
+        transition: all 0.3s ease;
+        outline: none;
+      }
+body.maddo-page-send-suggestions .site-main input[type="text"]:focus,
+body.maddo-page-send-suggestions .site-main textarea:focus {
+        border-color: white;
+        background-color:  rgba(34, 110, 241, 0.803);
+        box-shadow: 0 0 0 3px  rgba(34, 110, 241, 0.803);
+      }
+body.maddo-page-send-suggestions .site-main .form-group textarea {
+        height: 130px;
+        resize: vertical;
+      }
+body.maddo-page-send-suggestions .site-main .submit-btn {
+      width: 100%;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        border: none;
+        font-weight: bold;
+        padding: 14px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color blue;
+        margin-top: 10px;
+     }
+body.maddo-page-send-suggestions .site-main .submit-btn:hover {
+        background-color: #cbd5e1;
+      }
+body.maddo-page-send-suggestions .site-main .submit-btn:active {
+        transform: scale(0.99);
+      }
+
+
+      

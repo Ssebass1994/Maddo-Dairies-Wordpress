@@ -1,0 +1,456 @@
+/* Original Login.html portal styles; loaded only on the login page. */
+
+    /* Reset and Base Styles */
+
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-image: url('../images/YOGHURT.png'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 41, 38, 0.8); /* Dark brownish-grey tint */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.breadcrumb {
+    color: #ffffff;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* Content Section */
+.content-section {
+    background-color: #fbf7ee;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 370px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 900px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ========================================== */
+/* STYLES FOR MADDO DAIRIES LOGIN PORTAL     */
+/* ========================================== */
+
+:root {
+  --primary-color:  #76b5fd;;      /* Maddo Green */
+  --primary-hover:  #76b5fd;      /* Darker Green */
+  --primary-light: #e8f5e9;      /* Light Green Accent */
+  --text-dark: rgba(34, 110, 241, 0.803); ;          /* Charcoal */
+  --text-muted:rgba(34, 110, 241, 0.803);        /* Gray */
+  --border-color: #e5e7eb;       /* Border Light */
+  --bg-input: #f9fafb;           /* Input Background */
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --transition: all 0.25s ease-in-out;
+}
+
+/* Header & Typography */
+.login-header {
+  margin-bottom: 24px;
+}
+
+.portal-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: black;
+  color: var(--primary-color);
+  font-size: 1.0 rem;
+  font-weight: 700;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.login-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 0 0 6px 0;
+}
+
+.login-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Section Label */
+.section-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Role Selector Styles */
+.role-selector-container {
+  margin-bottom: 24px;
+}
+
+/* Mobile Dropdown (Hidden on screens >= 640px) */
+.role-dropdown-wrapper {
+  display: block;
+}
+
+.role-select-dropdown {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  background-color: var(--bg-input);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.role-select-dropdown:focus {
+  border-color: var(--primary-color);
+  background-color:rgba(34, 110, 241, 0.803);
+}
+
+/* Desktop Role Tabs (Hidden on screens < 640px) */
+.role-tabs-grid {
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 640px) {
+  .role-dropdown-wrapper {
+    display: none;
+  }
+  .role-tabs-grid {
+    display: grid;
+  }
+}
+
+.role-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 8px;
+  background-color: var(--bg-input);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.role-tab:hover {
+  background-color: var(--primary-light);
+  border-color: navy
+  color: var(--primary-color);
+}
+
+.role-tab.active {
+  background-color: white (--primary-light);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(46, 125, 50, 0.12);
+}
+
+.tab-icon {
+  font-size: 1.1rem;
+}
+
+/* Login Method Toggle (Email / Phone) */
+.method-toggle-container {
+  display: flex;
+  background-color:rgb(244, 245, 246);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.method-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.method-btn.active {
+  background-color: rgb(244, 245, 246);
+  color: var(--primary-color);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Groups & Inputs */
+.form-group {
+  margin-bottom: 18px;
+}
+
+.input-label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgot-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  font-size: 1.1rem;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 14px 12px 42px;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  background-color: var(--bg-input);
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  background-color: rgba(34, 110, 241, 0.803)
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.15);
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 4px;
+  transition: var(--transition);
+}
+
+.password-toggle:hover {
+  opacity: 1;
+}
+
+/* Remember Me Checkbox */
+.form-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: var(--primary-color);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--primary-color);
+  color:rgba(34, 110, 241, 0.803) ;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.25);
+}
+
+.btn-submit:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(46, 125, 50, 0.35);
+}
+
+.btn-arrow {
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.btn-submit:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+
+/*Java Script */
+
+// Role Configurations
+const roleConfig = {
+  farmer: { name: "Farmer Portal", desc: "Access milk collection records, daily ledger, and payout statements.", emailPlaceholder: "farmer@maddodairies.com", phonePlaceholder: "+256 700 000000" },
+  retailer: { name: "Retailer Portal", desc: "Place daily dairy product orders, check stock, and manage invoices.", emailPlaceholder: "store@retailer.com", phonePlaceholder: "+256 700 000000" },
+  wholesale: { name: "Wholesale Portal", desc: "Bulk milk orders, cold-chain scheduling, and contract management.", emailPlaceholder: "orders@distributor.com", phonePlaceholder: "+256 700 000000" },
+  vendor: { name: "Vendor Portal", desc: "Route dispatch, delivery schedules, and fleet logistics tracking.", emailPlaceholder: "logistics@vendor.com", phonePlaceholder: "+256 700 000000" },
+  supplier: { name: "Supplier Portal", desc: "Feed raw materials, packaging supply, and purchase order tracking.", emailPlaceholder: "supplies@partner.com", phonePlaceholder: "+256 700 000000" },
+  staff: { name: "Internal Staff", desc: "Quality assurance, plant operations, HR, and administrative controls.", emailPlaceholder: "staff.id@maddodairies.com", phonePlaceholder: "+256 700 000000" }
+};
+
+let currentRole = 'farmer';
+let currentMethod = 'email';
+
+function switchRole(roleKey) {
+  currentRole = roleKey;
+  const config = roleConfig[roleKey];
+
+  // Update Badge and Description
+  document.getElementById('portalBadge').textContent = config.name;
+  document.getElementById('portalDesc').textContent = config.desc;
+
+  // Update Dropdown Sync
+  document.getElementById('roleDropdown').value = roleKey;
+
+  // Update Active Tab Styles
+  document.querySelectorAll('.role-tab').forEach(tab => {
+    tab.classList.toggle('active', tab.dataset.role === roleKey);
+  });
+
+  // Update Placeholder {
+
+  const input = document.getElementById('loginIdentifier');
+  input.placeholder = currentMethod === 'email' ? config.emailPlaceholder : config.phonePlaceholder;
+}
+
+function setLoginMethod(method) {
+  currentMethod = method;
+  const isEmail = method === 'email';
+
+  document.getElementById('methodEmailBtn').classList.toggle('active', isEmail);
+  document.getElementById('methodPhoneBtn').classList.toggle('active', !isEmail);
+
+  const label = document.getElementById('identifierLabel');
+  const icon = document.getElementById('identifierIcon');
+  const input = document.getElementById('loginIdentifier');
+
+  if (isEmail) {
+    label.textContent = "Email Address";
+    icon.textContent = "✉️";
+    input.type = "email";
+    input.placeholder = roleConfig[currentRole].emailPlaceholder;
+  } else {
+    label.textContent = "Phone Number";
+    icon.textContent = "📞";
+    input.type = "tel";
+    input.placeholder = roleConfig[currentRole].phonePlaceholder;
+  }
+}
+
+function togglePasswordVisibility () {
+  const pwdInput = document.getElementById('loginPassword');
+  pwdInput.type = pwdInput.type === 'password' ? 'text' : 'password';
+
+}
+
+
+/* Requested 30px size for the Login portal welcome and news breadcrumb. */
+body.maddo-page-login .site-main .breadcrumb {
+  font-size: 30px !important;
+  line-height: 1.4;
+}

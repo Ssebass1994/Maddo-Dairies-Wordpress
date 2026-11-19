@@ -1,0 +1,1 @@
+<?php get_header(); $slug=get_post_field('post_name',get_queried_object_id()); $file=get_theme_file_path('/page-content/'.$slug.'.php'); if(file_exists($file)){ include $file; } else { ?><article class="maddo-content"><h1><?php the_title(); ?></h1><?php while(have_posts()):the_post();the_content();endwhile; ?></article><?php } get_footer(); ?>

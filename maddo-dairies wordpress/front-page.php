@@ -1,0 +1,1 @@
+<?php get_header(); $file=get_theme_file_path('/page-content/home.php'); if(file_exists($file)) include $file; get_footer(); ?>
